@@ -1,0 +1,24 @@
+# Privacy notice — working draft, not ready for publication
+
+Plugin: BL14B2 Assistance + JIN. Publisher: Yuwei Liu (individual).
+Contact: liu.yuwei@jasri.jp.
+
+## Tool inputs and calculation results
+When an AI client invokes JIN, the server receives the tool arguments selected by that client. These can include chemical formulas, mixture ratios, masses, areas, thicknesses, densities, concentrations, energies, and requested elements, absorption edges or fluorescence lines. These inputs are processed to calculate or retrieve results and return them to the client.
+
+The inspected server code does not include a function for retrieving complete chat transcripts or an application database/file-writing routine for saving calculation requests or results. This does not establish that no user-provided information can appear in tool arguments or technical logs.
+
+## Technical logs and hosting
+JIN is hosted using DigitalOcean App Platform. The inspected application does not explicitly log full request bodies. The runtime framework and hosting platform may produce access and error logs. Some application error messages contain input values, such as an invalid chemical formula. A supplied runtime-log screenshot shows timestamps, connection addresses and ports, HTTP methods and paths, response status codes, MCP request types, and session lifecycle messages. The excerpt shows tool-list requests, not calculation requests; it does not establish what a calculation or error request logs. The complete production logging configuration, forwarding and retention have not yet been verified.
+
+BEFORE PUBLICATION: confirm deployed revision; access/error log contents; retention; log forwarding; who can access logs; how deletion requests can be handled; and any provider-side processing relevant to the service. Replace this paragraph with confirmed information, without claiming zero retention unless verified.
+
+## AI platform, website and email
+The AI platform separately handles conversations and tool exchanges under its own policies. A GitHub Pages website, if used, is hosted by GitHub; its technical data handling must be described or linked after hosting is confirmed.
+
+If you email support, your address and the content you choose to send are received through the support email service. BEFORE PUBLICATION: publisher must decide and confirm the purpose, retention and deletion arrangements for support correspondence.
+
+## Questions
+For questions about this plugin's data handling, contact liu.yuwei@jasri.jp. Do not send confidential research data or sensitive personal information in support requests.
+
+This draft describes the code review and unresolved items; it is not a published policy or a declaration of verified production behavior.
